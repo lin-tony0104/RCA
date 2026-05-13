@@ -22,8 +22,8 @@ from itertools import islice
 
 # seg_trace.exe wiki seg_wiki/ 2800000000 2000000 10
 if len(sys.argv) != 6:
-    print("seg_trace.exe <source> <output_folder> <TRACE_LENGTH> <seg_size> <seg_num>")
-    print("Example: seg_trace.exe wiki seg_wiki/ 2800000000 2000000 10")
+    print("python seg_trace <source> <output_folder> <TRACE_LENGTH> <seg_size> <seg_num>")
+    print("Example: python seg_trace wiki seg_wiki/ 2800000000 2000000 10")
     sys.exit(1) 
 else:
     source = sys.argv[1]
