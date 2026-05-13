@@ -167,9 +167,18 @@ exp_name命名規則為  `<cache_size>_<trace_name>_<policy_name>_<seg_num>`
 
 
 # 環境:
+## 
+
+
+
+
+
 
 # 附註:
+
 FOO需要事先使用`\policies\FOO\FOO_labeling\foo.exe`生成 標記資料才可跑實驗
-具體跑
-
-
+具體步驟:   
+  1. 準備原始trace，請求格式為 <o_id> <o_size>。  
+  2. 使用`\trace\build_FOO_trace.py`生成trace_for_FOO，此時請求格式 <time> <o_id> <o_size>。
+  3. 使用`\policies\FOO\FOO_labeling\foo.exe` 計算出帶FOO標籤的trace，此時請求格式為 <o_id> <o_size> <o_admit>
+  
