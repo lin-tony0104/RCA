@@ -1,6 +1,6 @@
 # 程式結構
 
-本專案主要分為 `/`、`experiment/`、`policy/`、`trace/`、`utils/` 四個部分。
+本專案主要分為 `/`、`experiment/`、`policy/`、`trace/`、`utils/`、`env/`五個部分。
 
 ## `/`
 
@@ -165,17 +165,25 @@ exp_name命名規則為  `<cache_size>_<trace_name>_<policy_name>_<seg_num>`
 
 `utils/` 內放置 cache 實作常用到的資料結構與輔助工具。
 
+---
 
-# 環境:
-## 
+## `env/`
+- `RCA_based` : 所有方法的環境，包含policy及以外的程式環境(畫圖, 切資料等等)、(TinyLFU除外)。
+- `TinyLFU` : TinyLFU的環境
 
 
+# 實驗:
+## 新增策略
 
-
+---
+## 新增實驗
+---
+## 跑實驗
+---
+## 實驗結果
 
 
 # 附註:
-
 FOO需要事先使用`\policies\FOO\FOO_labeling\foo.exe`生成 標記資料才可跑實驗
 具體步驟:   
   1. 準備原始trace，請求格式為 <o_id> <o_size>。  
