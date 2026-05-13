@@ -20,6 +20,7 @@ int main(int argc, char* argv[]) {
 
     if (argc != 3) {
         std::cerr << argv[0] << " traceFile cacheSize" << std::endl;
+        std::cerr << "EX: " << argv[0] << " /seg_wiki/wiki_seg0_forFOO 3811783475" << std::endl;
         return 1;
     }
     std::string path("../../../trace/" + std::string(argv[1]));
