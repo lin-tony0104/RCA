@@ -4,9 +4,10 @@ if len(sys.argv)>=2:
     traces=sys.argv[1:]
 else:
     print("參數格式錯誤! \n python build_FOO_trace.py [trace name1], [trace name2] ...")
+    print("python build_FOO_trace.py /seg_wiki/wiki_seg0")
     sys.exit()
 
-
+# python build_FOO_trace.py /seg_wiki/wiki_seg0 /seg_wiki/wiki_seg1 /seg_wiki/wiki_seg2 /seg_wiki/wiki_seg3 /seg_wiki/wiki_seg4 /seg_wiki/wiki_seg5 /seg_wiki/wiki_seg6 /seg_wiki/wiki_seg7 /seg_wiki/wiki_seg8 /seg_wiki/wiki_seg9
 
 # trace="Twitter50"
 
@@ -21,5 +22,5 @@ for trace in traces:
             counter+=1
             wf.write(r)
             if counter % 1000000 == 0 and counter>0:
-                print("Processed requests:", counter)
+                print(f"Trace:{trace} ,Processed requests: {counter}")
 
