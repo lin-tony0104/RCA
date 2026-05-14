@@ -245,7 +245,7 @@ FOO需要事先使用`\policies\FOO\FOO_labeling\foo.exe`生成 標記資料才�
   3. 使用`\policies\FOO\FOO_labeling\foo.exe` 計算出帶FOO標籤的trace，此時請求格式為 <o_id> <o_size> <o_admit>  
 
 本篇實驗使用之trace可於此下載:  
-https://drive.google.com/drive/folders/1TZS0zZ12PBGBvPETkRrnHpgS9OgV80Ok?usp=sharing
+https://drive.google.com/drive/folders/1TZS0zZ12PBGBvPETkRrnHpgS9OgV80Ok?usp=sharing  
 本篇使用之trace原始下載點:  
 https://github.com/sunnyszy/lrb 
 
