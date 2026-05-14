@@ -249,5 +249,5 @@ https://drive.google.com/drive/folders/1TZS0zZ12PBGBvPETkRrnHpgS9OgV80Ok?usp=sha
 本篇使用之trace原始下載點:  
 https://github.com/sunnyszy/lrb   
 
-此版為修剪過後只保留論文中提及的內容之程式實作，完整實驗檔案包含(ETM方法): https://github.com/lin-tony0104/RCA-raw
+此版為修剪過後只保留論文中提及的內容之程式實作，完整實驗檔案包含之前失敗方案(ETM方法): https://github.com/lin-tony0104/RCA-raw
 
