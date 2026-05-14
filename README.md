@@ -227,11 +227,14 @@ experiment/
   5. 實驗結束後實驗記錄將儲存於`/exp/result/result.pkl`
 ---
 ## 跑實驗
-
-
-
+  1. 透過`run.py <exp_name>`跑實驗，會根據`exp_name/config.json`中的設定進行實驗。
+  2. 若需要一次測試同個實驗的seg0~seg9 也可透過`python run_script.py <cache_size>, <trace>, <policy>`達成 ，其中`cache_size`,`trace`,`policy`分別為`exp_name`中的資訊。  
+     (ex: `python run_script.py 05 wiki RCA` 會執行`05_wiki_RCA_seg0` ~ `05_wiki_RCA_seg9` 。
 ---
 ## 實驗結果
+  1. `python show_result.py <exp_name>`: 可用於畫出OHR曲線
+  2. `python TypeAU.py <exp_name_seg0> <exp_name_seg1>...`: 以A類不確定度計算OHR, Wall-Time。
+  3. `python TypeAU.py <exp_name_seg0>`: 單個實驗的OHR, Wall-Time。
 
 
 # 附註:
