@@ -174,11 +174,62 @@ exp_name命名規則為  `<cache_size>_<trace_name>_<policy_name>_<seg_num>`
 
 # 實驗:
 ## 新增策略
-
+  1. 於 `policy`內新增策略資料夾。
+  2. 於策略資料夾中實現策略，並且必須繼承`BasePolicy`，並實作`request`方法。
+  3. `run.py`透過`request`將請求傳入策略，`request`方法傳入格式為`<o_id>` `<o_size>` `<o_feature>`，回傳為hit。
+  4. 完成策略後，於`run.py`中的`policy_registry`註冊該方法，之後即可使用。
 ---
 ## 新增實驗
+  1. 於`experiment/`中新增實驗實驗資料夾，格式如下  
+ ```text
+experiment/
+└── exp_name/
+    ├── config.json
+    └── result/result.pkl
+```
+  2. `exp_name`格式為 CacheSize_trace_Policy_SegNum (ex: 05_wiki_RCA-Clip_seg0)，所有參數以`_`分隔，參數內容不可使用`_`(ex 05_wiki_RCA_Clip_seg0 不合法)。
+  3. `config`必要格式如下:
+ ```text
+{
+    "basic_config": {
+        "policy": 策略名稱,
+        "trace": 使用trace
+    },
+    "policy_config": {
+        "cache_size": 快取大小
+    },
+    "evaluator_config": {
+        "region": OHR紀錄間隔
+        "warmup": 未使用此參數
+        "verbose": 是否於執行時顯示進度
+    }
+}
+```
+4. `config`中也可視策略需求，於policy_config中新增項目，比如RCA新增了`region_size`, `alpha`:
+ ```text
+{
+    "basic_config": {
+        "policy": "RCA",
+        "trace": "seg_wiki/wiki_seg0"
+    },
+    "policy_config": {
+        "cache_size": 3811783475,
+        "region_size": 1000,
+        "alpha": 0.9
+    },
+    "evaluator_config": {
+        "region": 100,
+        "warmup": 1000000,
+        "verbose": true
+    }
+}
+```
+  5. 實驗結束後實驗記錄將儲存於`/exp/result/result.pkl`
 ---
 ## 跑實驗
+
+
+
 ---
 ## 實驗結果
 
