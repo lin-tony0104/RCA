@@ -247,5 +247,7 @@ FOO需要事先使用`\policies\FOO\FOO_labeling\foo.exe`生成 標記資料才�
 本篇實驗使用之trace可於此下載:  
 https://drive.google.com/drive/folders/1TZS0zZ12PBGBvPETkRrnHpgS9OgV80Ok?usp=sharing  
 本篇使用之trace原始下載點:  
-https://github.com/sunnyszy/lrb 
+https://github.com/sunnyszy/lrb   
+
+此版為修剪過後只保留論文中提及的內容之程式實作，完整實驗檔案包含(ETM方法): https://github.com/lin-tony0104/RCA-raw
 
