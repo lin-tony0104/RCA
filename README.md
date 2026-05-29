@@ -69,7 +69,7 @@ conda activate RCA_based
 
 ### 4.1 RCA 系列方法
 * **RCA**: 本研究提出之方法
-* **RCA_Clip**: 移除 RD Clipping
+* **RCA_Clip**: 加入 RD Clipping
 * **RCA_EMACacheCost**: 以 EMA 估計 Cache Cost
 * **RCA_Init**: 加入初始化機制
 * **RCA_Aging**: 加入 Aging 機制
@@ -86,7 +86,9 @@ conda activate RCA_based
   ```
 python run.py 05_wiki_RCA_seg0
   ```
-### 5.2 腳本執行seg0-seg1
+  根據實驗`/experiment/05_wiki_RCA_seg0/config.json`設置進行測試，並將結果儲存於 `experiment/05_wiki_RCA_seg0/result/result.pkl`中
+
+### 5.2 腳本執行seg0-seg9
   ```
 python run_script.py 05 wiki RCA
 ```
@@ -105,7 +107,6 @@ python show_result_diff.py 05_wiki_RCA_seg0 05_wiki_RCA-aging_seg0
 ### 5.5 Type A 不確定度
 ```
 python TypeAu.py 05_wiki_LRU_seg0 05_wiki_LRU_seg1 05_wiki_LRU_seg2 05_wiki_LRU_seg3 05_wiki_LRU_seg4 05_wiki_LRU_seg5 05_wiki_LRU_seg6 05_wiki_LRU_seg7 05_wiki_LRU_seg8 05_wiki_LRU_seg9
-
 ```
 
 ## 6. 實驗設定
@@ -162,7 +163,7 @@ exp_name命名規則為  `<cache_size>_<trace_name>_<policy_name>_<seg_num>`
 - `sizeCDF.py`: 繪製物件大小分布累積分布圖 (fig 2)
 - `obj_pop.py`: 依請求次數由高至低排序繪製物件熱門度分析圖(fig 3)
 - `seg_trace.py`: 對trace等距抽樣10個2M的子trace。
-- `build_FOO_trace.py`: 將trace格式改為FOO要求的<time> <o_id> <o_size>。
+- `build_FOO_trace.py`: 將tracce由 <o_id> <o_size> 改成FOO要求的輸入格是 <logit time> <o_id> <o_size>
 
 ## 8. 資料集
 本篇實驗使用之trace可於此下載:  
@@ -186,8 +187,9 @@ https://github.com/sunnyszy/lrb
 FOO需要事先使用`\policies\FOO\FOO_labeling\foo.exe`生成 標記資料才可跑實驗
 具體步驟:   
   1. 準備原始trace，請求格式為 <o_id> <o_size>。  
-  2. 使用`\trace\build_FOO_trace.py`生成trace_for_FOO，此時請求格式 <time> <o_id> <o_size>。
-  3. 使用`\policies\FOO\FOO_labeling\foo.exe` 計算出帶FOO標籤的trace，此時請求格式為 <o_id> <o_size> <o_admit>  
+  2. 使用`\trace\build_FOO_trace.py`將tracce由 <o_id> <o_size> 改成FOO要求的輸入格是 <logit time> <o_id> <o_size>。
+  3. 使用`\policies\FOO\FOO_labeling\foo.exe` 計算出帶FOO標籤的trace，此時請求格式為 <o_id> <o_size> <o_admit>。
+  4. 可開始對FOO做實驗
 
 ### 9.2 完整早期其他實驗(ETM方法)
 https://github.com/lin-tony0104/RCA-raw
