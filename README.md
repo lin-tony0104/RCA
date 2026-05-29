@@ -70,17 +70,16 @@ conda activate RCA_based
 ### 4.1 RCA 系列方法
 * **RCA**: 本研究提出之方法
 * **RCA_Clip**: 移除 RD Clipping
-* **RCA_Init**: 移除初始化機制
+* **RCA_EMACacheCost**: 以 EMA 估計 Cache Cost
+* **RCA_Init**: 加入初始化機制
 * **RCA_Aging**: 加入 Aging 機制
 * **RCA_Prob**: 加入機率式准入
-* **RCA_EMACacheCost**: 以 EMA 估計 Cache Cost
 * **RCA_Val**: 使用 Value-Based Admission
 
 ### 4.2 比較方法
 * **LRU**
 * **TinyLFU**
 * **AdaptSize**
-* **RL-Cache**
 
 ## 5. 使用範例
 ### 5.1 執行單一實驗
