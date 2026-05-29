@@ -28,9 +28,9 @@ conda activate RCA_based
 .
 ├── experiment/                 # 實驗設定與結果
 │   └── exp_name/               # 命名規則  <cache_size>_<trace_name>_<policy_name>_<seg_num>
-│       ├── config.json         # 設定檔
+│       ├── config.json         # 實驗設定檔
 │       └── result/
-│           └── result.pkl      # 結果檔\
+│           └── result.pkl      # 實驗結果檔
 │
 ├── policies/                   # 快取策略資料夾
 │   ├── policy_name/            # 策略實作
@@ -58,8 +58,8 @@ conda activate RCA_based
 │   └── TinyLFU.yml             # TinyLFU環境
 │
 ├── CacheEvaluator.py           # OHR,BHR維護、產出result.pkl。
-├── TypeAU.py                   # Type A 不確定度分析
-├── run.py                      # 實驗主程式入口 (table2, table3, tanle4)
+├── TypeAU.py                   # Type A 不確定度分析 (table2, table3, tanle4)
+├── run.py                      # 實驗主程式入口 
 ├── run_script.py               # 批次執行工具
 ├── show_result.py              # OHR 曲線繪製 (fig4, fig6, fig8, fig10, fig12, fig14)
 └── show_result_diff.py         # 實驗結果比較 (fig5, fig7, fig9, fig11, fig13, fig15)
