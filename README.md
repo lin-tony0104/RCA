@@ -48,10 +48,18 @@ conda activate RCA_based
 │   └── sizeCDF.py              # 繪製物件大小分布累積分布圖 (fig 2)
 │
 ├── utils/                      # 共用工具與資料結構
+│   ├── MinHeap.py              # 最小堆
+│   ├── MinHeap_test.py         # 最小堆測試
+│   ├── MinMaxHeap.py           # 最大最小堆
+│   └── deque.py                # 雙向佇列
+│
+├── env/                        # conda環境
+│   ├── RCA_based.yml           # 基礎環境， 若要自行新增策略則可以此環境為基礎，加上自己的環境。
+│   └── TinyLFU.yml             # TinyLFU環境
+│
 
-
-
-├── env/                        # 執行環境
+├── CacheEvaluator.py           # OHR,BHR維護、產出result.pkl。
+├── TypeAU.py                   # Type A 不確定度分析
 ├── run.py                      # 實驗主程式入口
 ├── run_script.py               # 批次執行工具
 ├── show_result.py              # OHR 曲線繪製
