@@ -57,14 +57,12 @@ conda activate RCA_based
 │   ├── RCA_based.yml           # 基礎環境， 若要自行新增策略則可以此環境為基礎，加上自己的環境。
 │   └── TinyLFU.yml             # TinyLFU環境
 │
-
 ├── CacheEvaluator.py           # OHR,BHR維護、產出result.pkl。
 ├── TypeAU.py                   # Type A 不確定度分析
-├── run.py                      # 實驗主程式入口
+├── run.py                      # 實驗主程式入口 (table2, table3, tanle4)
 ├── run_script.py               # 批次執行工具
-├── show_result.py              # OHR 曲線繪製
-├── show_result_diff.py         # 實驗結果比較
-└── TypeAU.py                   # Type A 不確定度分析
+├── show_result.py              # OHR 曲線繪製 (fig4, fig6, fig8, fig10, fig12, fig14)
+└── show_result_diff.py         # 實驗結果比較 (fig5, fig7, fig9, fig11, fig13, fig15)
 ```
 
 ## 4. 實作方法
