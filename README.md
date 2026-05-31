@@ -83,6 +83,9 @@ conda activate RCA_based
 * **FOO**
 
 ## 5. 使用範例
+### 5.0 準備本篇使用之trace:
+1. 後面第8章節說明trace網址下載`本篇實驗使用之trace`，下載`wiki_seg0`~ `wiki_seg9` 和 `wiki_seg0_forFOO` ~ `wiki_seg9_forFOO`
+2. 放置於`trace/seg_wiki` 。 
 ### 5.1 執行單一實驗
   ```
 python run.py 05_wiki_RCA_seg0
