@@ -80,6 +80,7 @@ conda activate RCA_based
 * **LRU**
 * **TinyLFU**
 * **AdaptSize**
+* **FOO**
 
 ## 5. 使用範例
 ### 5.1 執行單一實驗
