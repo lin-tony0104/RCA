@@ -28,7 +28,7 @@ sudo apt install python2.7-dev
 wget https://archives.boost.io/release/1.71.0/source/boost_1_71_0.tar.gz
 tar -xzvf boost_1_71_0.tar.gz
 cd boost_1_71_0
-./bootstrap.sh./bootstrap.sh --with-python=python2.7
+./bootstrap.sh --with-python=python2.7
 ./b2 --with-python
 cd ~/Desktop/boost_1_71_0/stage/lib
 sudo cp libboost_python27* /usr/lib/x86_64-linux-gnu/
