@@ -17,19 +17,13 @@ pip install "grpcio<1.30.0"
 pip install tensorflow==1.15.0 keras==2.2.4 numpy matplotlib hurry.filesize tqdm
 ```
 
-### 1.3 安裝python相關lib
-```
-pip install "grpcio<1.30.0"
-pip install tensorflow==1.15.0 keras==2.2.4 numpy matplotlib hurry.filesize tqdm
-```
-
-### 1.4 安裝c++環境
+### 1.3 安裝c++環境
 ```
 sudo apt install build-essential
 sudo apt install python2.7-dev
 ```
 
-### 1.5 build boost library
+### 1.4 build boost library
 ```
 wget https://archives.boost.io/release/1.71.0/source/boost_1_71_0.tar.gz
 tar -xzvf boost_1_71_0.tar.gz
