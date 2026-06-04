@@ -21,6 +21,7 @@ pip install tensorflow==1.15.0 keras==2.2.4 numpy matplotlib hurry.filesize tqdm
 ```
 sudo apt install build-essential
 sudo apt install python2.7-dev
+sudo apt install libboost-python-dev
 ```
 
 ### 1.4 build boost library
