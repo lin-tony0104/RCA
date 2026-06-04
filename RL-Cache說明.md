@@ -35,7 +35,14 @@ cd ~/Desktop/boost_1_71_0/stage/lib
 sudo cp libboost_python27* /usr/lib/x86_64-linux-gnu/
 sudo ln -s /usr/lib/x86_64-linux-gnu/libboost_python27.so /usr/lib/x86_64-linux-gnu/libboost_python.so
 ```
-
+## 2. 編譯環境
+```
+make all
+cd feature_collector
+make all
+cd ../reward_collector
+make all
+```
 
 ## 2. trace
 ### 2.1 train data
