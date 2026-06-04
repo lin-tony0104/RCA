@@ -33,8 +33,6 @@ cd boost_1_71_0
 cd ~/Desktop/boost_1_71_0/stage/lib
 sudo cp libboost_python27* /usr/lib/x86_64-linux-gnu/
 sudo ln -s /usr/lib/x86_64-linux-gnu/libboost_python27.so /usr/lib/x86_64-linux-gnu/libboost_python.so
-sudo apt install build-essential
-sudo apt install python2.7-dev
 ```
 
 
