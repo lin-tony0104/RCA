@@ -1,5 +1,5 @@
 # RL-Cache
-本篇直接使用RL-CACHE作者提供的code來跑實驗，連結為: https://github.com/quovadim/RL-Cache
+本篇直接使用RL-CACHE作者提供的code來跑實驗，連結為: https://github.com/quovadim/RL-Cache  
 實驗流程接照著作者說明即可，其餘環境建置說明如下。
 
 ## 1. Environment
