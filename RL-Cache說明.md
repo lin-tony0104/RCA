@@ -51,4 +51,4 @@ make all
 
 
 ## 備註
-- 已有嘗試使用GPU版本TensorFlow，環境較難安裝，且未有明顯加速故只說明CPU版本TensorFlow。
+- 已有嘗試使用GPU版本TensorFlow，環境較難安裝且未有明顯加速故只說明CPU版本TensorFlow。
