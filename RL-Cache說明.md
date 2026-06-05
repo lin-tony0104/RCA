@@ -47,4 +47,8 @@ make all
 ## 2. trace
 ### 2.1 train data
 ### 2.2 test data
-  
+
+
+
+## 備註
+- 已有嘗試使用GPU版本TensorFlow，環境較難安裝，且未有明顯加速故只說明CPU版本TensorFlow。
