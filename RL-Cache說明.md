@@ -31,7 +31,7 @@ tar -xzvf boost_1_71_0.tar.gz
 cd boost_1_71_0
 ./bootstrap.sh --with-python=python2.7
 ./b2 --with-python
-cd ~/Desktop/boost_1_71_0/stage/lib
+cd ./stage/lib
 sudo cp libboost_python27* /usr/lib/x86_64-linux-gnu/
 sudo ln -s /usr/lib/x86_64-linux-gnu/libboost_python27.so /usr/lib/x86_64-linux-gnu/libboost_python.so
 ```
