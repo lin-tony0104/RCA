@@ -81,7 +81,7 @@ python2.7 train.py train -t=15 -v
   python2.7 test.py wiki_seg0 wiki_seg0
   ```
   結果儲存於`RL-Cache/tests/wiki_seg0/wiki_seg0/`
-  每100請求紀錄一個pickle檔，透過`RL_Cache_result.py`
+  每100請求紀錄一個pickle檔，透過`RL_Cache_result.py`讀取OHR
   ```
   python2.7 RL_Cache_result.py ~/Desktop/RL-Cache/tests/wiki_seg0/wiki_seg0
   ```
