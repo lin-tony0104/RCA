@@ -17,6 +17,7 @@ RCA 透過結合物件大小（Object Size）與重用距離（Reuse Distance）
   cd RCA
   ```
 ### 2.2 Create New Conda Environment
+可安裝的現成環境列於資料夾env/
   ```
 # 建立並進入環境 
 conda env create -f env/RCA_based.yml
