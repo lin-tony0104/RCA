@@ -10,13 +10,13 @@ folder = args.folder
 
 result = []
 files = []
-#max_i = -1
+max_i = -1
 for f in os.listdir(folder):
     if f.startswith("0_"):
         try:
             idx = int(f.split("_")[1])
             files.append((idx, f))
- #           max_i = max(max_i,idx)
+            max_i = max(max_i,idx)
         
         except ValueError:
             pass
@@ -27,9 +27,12 @@ for _, filename in files:
     with open(os.path.join(folder, filename), "rb") as fp:
         data = pickle.load(fp)
 
-    result.append(data["ML-LRU-DET-3635"][0][0])
+#    print(data)
+
+    result.append(data["ML-LRU-RNG-3635"][0][0])
+
 
 #print(result)
 print("OHR: ", sum(result)/len(result))
-#print("last: ", max_i)
+print("last: ", max_i)
 
