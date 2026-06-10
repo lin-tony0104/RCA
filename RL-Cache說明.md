@@ -36,6 +36,12 @@ sudo cp libboost_python27* /usr/lib/x86_64-linux-gnu/
 sudo ln -s /usr/lib/x86_64-linux-gnu/libboost_python27.so /usr/lib/x86_64-linux-gnu/libboost_python.so
 ```
 ## 2. 編譯環境
+接下來步驟與RL-Cache提供相同 https://github.com/quovadim/RL-Cache
+```
+git clone https://github.com/WVadim/RL-Cache
+cd RL-Cache
+```
+
 ```
 make all
 cd feature_collector
@@ -43,10 +49,27 @@ make all
 cd ../reward_collector
 make all
 ```
+## 3. 加入本篇實驗設置與trace
+https://drive.google.com/drive/folders/1DnF42yNx2osQW5oodMWjnwbprHUEyT46?usp=sharing
+- 將experiments/內容放入 RL-Cache/experiments/中  (實驗設置)
+- 將data/內容放入 RL-Cache/data/中  (Trace)
 
-## 2. trace
-### 2.1 train data
-### 2.2 test data
+### 3.1 對trace做預處理
+```
+cd RL-Cache
+./gather_data.sh data/train/ data/train_rewarded/
+python2.7 collect_statistics.py statistics/train -r=train -i=2
+```
+
+### 3.2 訓練
+
+```
+python2.7 train.py train -t=15 -v
+```
+
+##
+
+
 
 
 
