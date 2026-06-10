@@ -66,9 +66,25 @@ python2.7 collect_statistics.py statistics/train -r=train -i=2
 ```
 python2.7 train.py train -t=15 -v
 ```
+訓練出的模型生成於 `/RL-Cache/experiments/train/adm`
 
-##
-
+### 3.3 測試
+- `/RL-Cache/experiments/train/adm` 複製到 `RL-Cache/experiments/wiki_seg0`  ~ `RL-Cache/experiments/wiki_seg9`
+- 針對 `wiki_seg0` ~ `wiki_seg9`做測試。以下用`wiki_seg0`示範。  
+  對test trace預處理(3.1步驟)
+  ```
+  ./gather_data.sh data/wiki_seg0/ data/wiki_seg0_rewarded/
+  python2.7 collect_statistics.py statistics/wiki_seg0 -r=wiki_seg0 -i=2
+  ```
+  跑測試
+  ```
+  python2.7 test.py wiki_seg0 wiki_seg0
+  ```
+  結果儲存於`RL-Cache/tests/wiki_seg0/wiki_seg0/`
+  每100請求紀錄一個pickle檔，透過`RL_Cache_result.py`
+  ```
+  python2.7 RL_Cache_result.py ~/Desktop/RL-Cache/tests/wiki_seg0/wiki_seg0
+  ```
 
 
 
