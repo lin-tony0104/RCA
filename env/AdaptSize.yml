@@ -1,0 +1,30 @@
+name: adaptsize
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+
+  - cmake
+  - pybind11
+  - pybind11-global
+
+  - bzip2
+  - ca-certificates
+  - openssl
+  - sqlite
+  - tk
+  - xz
+  - zlib
+  - zstd
+  - libffi
+  - libcurl
+  - libssh2
+  - libuv
+  - krb5
+  - expat
+  - tzdata
