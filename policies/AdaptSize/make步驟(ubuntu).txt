@@ -1,0 +1,8 @@
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+
+
+到build/ 複製libadaptsize.so 貼到policies/AdaptSize/  並重新命名為adaptsize.so
