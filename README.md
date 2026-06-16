@@ -7,7 +7,7 @@ RCA 透過結合物件大小（Object Size）與重用距離（Reuse Distance）
 本專案同時包含 RCA 消融實驗版本、基準方法、Trace 處理工具、實驗框架與評估工具。
 
 ## 1. Environment
-* **OS**: Windows 10
+* **OS**: Windows 10 ,ubuntu 20.04
 * **Python**: 3.10.8  
 
 ## 2. Installation
