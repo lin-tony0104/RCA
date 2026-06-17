@@ -99,3 +99,9 @@ python2.7 train.py train -t=15 -v
   - 點選 I agree to theTerms and Conditions中的連結
   - 勾選 I agree to theTerms and Conditions
   - 可開始下載VMware
+  - 完成下載
+  - chmod +x VMware.bundle
+  - sudo ./VMware.bundle
+  - sudo apt update
+  - sudo apt install build-essential
+  - 開始安裝vm-ware
