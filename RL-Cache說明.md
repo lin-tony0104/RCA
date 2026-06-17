@@ -91,3 +91,11 @@ python2.7 train.py train -t=15 -v
 
 ## 備註
 - 已有嘗試使用GPU版本TensorFlow，環境較難安裝且未有明顯加速故只說明CPU版本TensorFlow。
+- 若打算於ubuntu使用vm重現此部分，以下將說明VMware安裝方法
+  - 於 https://support.broadcom.com/group/ecx/free-downloads 登入帳戶。
+  - 於下方選擇VMware Workstation Pro。
+  - 選擇VMware Workstation Pro 17.0 for Linux
+  - 選擇17.6
+  - 點選 I agree to theTerms and Conditions中的連結
+  - 勾選 I agree to theTerms and Conditions
+  - 可開始下載VMware
