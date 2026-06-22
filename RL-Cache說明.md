@@ -105,3 +105,6 @@ python2.7 train.py train -t=15 -v
   - sudo apt update
   - sudo apt install build-essential
   - 開始安裝vm-ware
+
+- https://diegocastro.ar/install-vmware-workstation-pro-on-ubuntu-24-04/
+- https://github.com/philipl/vmware-host-modules/tree/workstation-17.6.3
