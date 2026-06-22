@@ -53,7 +53,9 @@ make all
 https://drive.google.com/drive/folders/1DnF42yNx2osQW5oodMWjnwbprHUEyT46?usp=sharing
 - 將experiments/內容放入 RL-Cache/experiments/中  (實驗設置)
 - 將data/內容放入 RL-Cache/data/中  (Trace)
-
+```
+cp
+```
 ### 3.1 對trace做預處理
 ```
 cd RL-Cache
